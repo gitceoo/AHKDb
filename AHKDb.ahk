@@ -5506,6 +5506,10 @@ DatabaseView( db_DatabaseName, db_UnPauseScript:=FALSE ) { ; Displays database i
 
 	; Create GUI controls:
 	Gui, +Resize																								; enable re-sizing of window
+    ; add by gitceo
+	Gui, Font, s14      ;, Consolas  ;Courier New Arial Calibri Century Gothic
+	Gui, Font, w600
+	; end
 	Gui, Add, Text, y9 w160 h20 Disabled Center, File: %db_DatabaseName%										; add text control
 	Gui, Add, Text, y9 w140 h20 Disabled, Dimensions: %db_DatabaseNumberOfRows% x %db_DatabaseNumberOfColumns%	; add text control
 	Gui, Add, Text, y9 w90 h20 Disabled Right, Size: %db_DatabaseFileSize% %db_DatabaseFileSizeUnit%			; add text control
